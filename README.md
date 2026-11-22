@@ -13,7 +13,17 @@ Live canvas: [Spa & Wellness Platform – Map & Storyboard](https://claude.ai/ar
 | 3 · Storyboard, part 1 | Staff web: daily loop (7 screens) | Done |
 | 3 · Storyboard, guest booking | Mobile web: 6 screens + flow map | Done |
 | 3 · Storyboard, next | Provider mobile app; manager screens; dark theme set; flows frame by frame | To do |
-| 4 · Build | Clickable hi-fi prototype | Not started |
+| 4 · Build | Clickable hi-fi prototype: staff daily loop + guest booking | Round 1 done (`prototype/`) |
+
+## Try the prototype
+
+`prototype/index.html` is a self-contained clickable prototype (one file, no build step). Open it in any browser, or turn on GitHub Pages for this repo (Settings › Pages › Deploy from branch › `main` / root) and visit `/prototype/`.
+
+- **Start page:** pick the staff app (desktop/tablet) or guest booking (phone). It also has a list of things for testers to try.
+- **Staff app:** appointment book (click an empty spot to book, click a block for actions), new appointment panel, take payment (tips, tenders, retail with Sale by), checkout list, invoices with reopen (auto-backdate) and refund, guest profiles, membership sale (its own invoice), alalAI panel, country switch (UAE AED / Philippines PHP / Saudi SAR), light and dark themes.
+- **Guest booking:** spa home → service → who & when → details (phone first, intro price) → hold with card → booked. The booking appears on the staff book as "Online".
+- Sample data only, saved in the browser's local storage; "Reset demo" starts over. Demo clock is fixed at 12:40 on Sun 22 Nov 2026. No real payments; only the last 4 digits of a typed card are kept.
+- Not built yet: provider mobile app, manager screens (payroll, inventory, marketing, reports, setup), SMS inbox.
 
 ## Decisions so far
 
