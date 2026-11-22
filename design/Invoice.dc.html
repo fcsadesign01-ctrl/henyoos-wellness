@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>03e · Invoice + I want to…</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#5B21B6}a:hover{color:#3B0F86}
+</style>
+</helmet>
+<div style="position: relative; width: 100%; min-height: 900px; box-sizing: border-box; background: #F5F8FC; font-family: 'Plus Jakarta Sans', sans-serif; color: #0B1220; display: flex; flex-direction: column">
+
+<header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 12px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E8F0">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="width: 30px; height: 30px; border-radius: 8px; background: linear-gradient(135deg, #2346E8, #7C2BE0); color: #FFFFFF; font-size: 16px; font-weight: 800; display: flex; align-items: center; justify-content: center">h</div>
+<div style="font-size: 16px; font-weight: 800">henyoOS</div>
+<div style="width: 1px; height: 22px; background: #E3E8F0"></div>
+<div style="font-size: 14px; font-weight: 700">Wellness &amp; Spa</div>
+</div>
+<div style="display: flex; flex-direction: column; font-size: 12px; line-height: 16px"><b>Reem S.</b><span style="color: #5A6478">Manager · logged in</span></div>
+</header>
+
+<main style="flex: 1; padding: 28px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 340px); gap: 20px; align-items: start">
+<section style="display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-size: 12px; color: #5A6478">Invoice #10471 · Rami K. · service 21 Nov</div>
+<h1 style="margin: 0; font-size: 28px; line-height: 34px; font-weight: 800; letter-spacing: -0.02em">AED 441.00 · Closed</h1>
+<div style="font-size: 12px; color: #5A6478">Editable until 28 Nov (7-day lock)</div>
+</div>
+<div style="position: relative">
+<button type="button" aria-expanded="true" style="font-family: inherit; font-size: 13px; font-weight: 700; color: #0B1220; background: #FFFFFF; border: 1px solid #0B1220; border-radius: 999px; padding: 10px 16px">I want to…</button>
+<div role="menu" style="position: absolute; right: 0; top: 48px; width: 240px; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 14px; box-shadow: 0 12px 32px rgba(11,18,32,0.10); padding: 6px; display: flex; flex-direction: column; font-size: 13px">
+<button type="button" role="menuitem" style="font-family: inherit; text-align: left; font-size: 13px; font-weight: 700; background: #EFE6FB; color: #5B21B6; border: none; border-radius: 10px; padding: 9px 12px">Reopen invoice</button>
+<button type="button" role="menuitem" style="font-family: inherit; text-align: left; font-size: 13px; background: transparent; color: #0B1220; border: none; border-radius: 10px; padding: 9px 12px">Refund</button>
+<button type="button" role="menuitem" style="font-family: inherit; text-align: left; font-size: 13px; background: transparent; color: #0B1220; border: none; border-radius: 10px; padding: 9px 12px">Exchange product</button>
+<button type="button" role="menuitem" style="font-family: inherit; text-align: left; font-size: 13px; background: transparent; color: #0B1220; border: none; border-radius: 10px; padding: 9px 12px">Edit tips</button>
+<button type="button" role="menuitem" style="font-family: inherit; text-align: left; font-size: 13px; background: transparent; color: #0B1220; border: none; border-radius: 10px; padding: 9px 12px">Edit commissions</button>
+<button type="button" role="menuitem" style="font-family: inherit; text-align: left; font-size: 13px; background: transparent; color: #5A6478; border: none; border-radius: 10px; padding: 9px 12px">View invoice log</button>
+</div>
+</div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; padding: 6px 0; font-size: 14px">
+<div style="display: flex; justify-content: space-between; padding: 12px 18px"><span><b>Swedish massage · 80 min</b> <span style="color: #5A6478; font-size: 12px">sale by Layla</span></span><span>AED 380.00</span></div>
+<div style="display: flex; justify-content: space-between; padding: 12px 18px; border-top: 1px solid #EDF1F6"><span style="color: #5A6478">VAT 5%</span><span>AED 19.00</span></div>
+<div style="display: flex; justify-content: space-between; padding: 12px 18px; border-top: 1px solid #EDF1F6"><span style="color: #5A6478">Tip to Layla</span><span>AED 42.00</span></div>
+<div style="display: flex; justify-content: space-between; padding: 12px 18px; border-top: 1px solid #EDF1F6"><span>Paid · Visa •••• 0921</span><span><b>AED 441.00</b></span></div>
+</div>
+</section>
+<aside style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">INVOICE LOG</div>
+<div style="font-size: 13px; line-height: 20px"><b>Closed</b> · 21 Nov 11:24<br><span style="color: #5A6478; font-size: 12px">by Lina A. · card payment</span></div>
+<div style="font-size: 13px; line-height: 20px"><b>Created</b> · 21 Nov 10:00<br><span style="color: #5A6478; font-size: 12px">from appointment · Layla</span></div>
+</aside>
+</main>
+
+<div aria-hidden="true" style="position: absolute; inset: 0; background: rgba(11, 18, 32, 0.38)"></div>
+
+<div role="dialog" aria-modal="true" aria-labelledby="reopen-title" style="position: absolute; left: 50%; top: 150px; transform: translateX(-50%); width: 480px; max-width: calc(100% - 32px); box-sizing: border-box; background: #FFFFFF; border-radius: 20px; box-shadow: 0 24px 60px rgba(11,18,32,0.25); padding: 26px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 12px; color: #5A6478">Invoice #10471 · Rami K.</div>
+<h2 id="reopen-title" style="margin: 0; font-size: 22px; line-height: 28px; font-weight: 800; letter-spacing: -0.02em">Reopen this invoice?</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ro-reason" style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">REASON</label>
+<select id="ro-reason" style="font-family: inherit; font-size: 14px; color: #0B1220; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 12px; background: #FFFFFF"><option>Change payment method</option></select>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ro-pass" style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">CONFIRM IT'S YOU</label>
+<input id="ro-pass" type="password" placeholder="Your password or PIN" style="font-family: inherit; font-size: 14px; color: #0B1220; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 12px">
+</div>
+<div style="background: #E2F3EA; color: #154530; border-radius: 12px; padding: 12px 14px; font-size: 13px; line-height: 19px"><b>Payroll stays right.</b> When you close it again, the close date stays 21 Nov (the service date), so Layla is paid once. No manual backdating.</div>
+<div style="display: flex; justify-content: flex-end; align-items: center; gap: 10px">
+<button type="button" style="font-family: inherit; font-size: 14px; font-weight: 600; color: #0B1220; background: transparent; border: none; padding: 12px 14px">Cancel</button>
+<button type="button" style="font-family: inherit; font-size: 14px; font-weight: 700; color: #FFFFFF; background: {{accent}}; border: none; border-radius: 999px; padding: 12px 22px">Reopen invoice</button>
+</div>
+<div style="font-size: 12px; color: #5A6478">Logged as: reopened by Reem S. with reason. Past 28 Nov this invoice locks; refund and re-sell instead.</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#7C3AED"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#7C3AED' };
+}
+}
+</script>
+</body>
+</html>

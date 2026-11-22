@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>03f · alalAI panel</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#5B21B6}a:hover{color:#3B0F86}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 900px; box-sizing: border-box; background: #F5F8FC; font-family: 'Plus Jakarta Sans', sans-serif; color: #0B1220; display: flex; flex-direction: column">
+
+<header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 12px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E8F0">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="width: 30px; height: 30px; border-radius: 8px; background: linear-gradient(135deg, #2346E8, #7C2BE0); color: #FFFFFF; font-size: 16px; font-weight: 800; display: flex; align-items: center; justify-content: center">h</div>
+<div style="font-size: 16px; font-weight: 800">henyoOS</div>
+<div style="width: 1px; height: 22px; background: #E3E8F0"></div>
+<div style="font-size: 14px; font-weight: 700">Wellness &amp; Spa</div>
+</div>
+<div style="display: flex; align-items: center; gap: 8px">
+<button type="button" aria-pressed="true" style="font-family: inherit; font-size: 13px; font-weight: 700; color: #FFFFFF; background: #5B21B6; border: none; border-radius: 999px; padding: 8px 14px">Ask alalAI</button>
+<div style="display: flex; flex-direction: column; font-size: 12px; line-height: 16px; padding-left: 6px"><b>Lina A.</b><span style="color: #5A6478">Front desk · logged in</span></div>
+</div>
+</header>
+
+<div style="flex: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 440px)">
+<div aria-hidden="true" style="padding: 22px 28px; display: flex; flex-direction: column; gap: 14px; opacity: 0.45">
+<div style="font-size: 28px; line-height: 34px; font-weight: 800; letter-spacing: -0.02em">Today, 22 Nov</div>
+<div style="flex: 1; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr">
+<div style="padding: 12px; display: flex; flex-direction: column; gap: 10px"><b style="font-size: 14px">Layla</b><div style="height: 120px; background: #E1EBFB; border-radius: 10px"></div><div style="height: 120px; background: #FCEFD0; border-radius: 10px"></div></div>
+<div style="padding: 12px; display: flex; flex-direction: column; gap: 10px"><b style="font-size: 14px">Omar</b><div style="height: 80px; background: #E1EBFB; border-radius: 10px; margin-top: 40px"></div><div style="height: 120px; background: #FCEFD0; border-radius: 10px"></div></div>
+<div style="padding: 12px; display: flex; flex-direction: column; gap: 10px"><b style="font-size: 14px">Sara</b><div style="height: 80px; background: #E1EBFB; border-radius: 10px"></div><div style="height: 80px; background: #FBE2DE; border-radius: 10px; outline: 3px solid #7C3AED"></div></div>
+<div style="padding: 12px; display: flex; flex-direction: column; gap: 10px"><b style="font-size: 14px">Dana</b><div style="height: 200px; background: #EEF1F5; border-radius: 10px"></div></div>
+</div>
+</div>
+
+<aside aria-label="alalAI assistant" style="background: #FFFFFF; border-left: 1px solid #E3E8F0; box-shadow: -12px 0 32px rgba(11, 18, 32, 0.06); display: flex; flex-direction: column">
+<div style="padding: 20px 22px 14px; display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid #EDF1F6">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="width: 40px; height: 40px; border-radius: 12px; background: #EFE6FB; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" style="fill:none;stroke:#5B21B6;stroke-width:1.7;stroke-linejoin:round"><rect x="3" y="6" width="14" height="10" rx="3"></rect><path d="M10 3 V6"></path><circle cx="7.5" cy="11" r="0.8" style="fill:#5B21B6"></circle><circle cx="12.5" cy="11" r="0.8" style="fill:#5B21B6"></circle></svg></div>
+<div style="display: flex; flex-direction: column"><b style="font-size: 18px">alalAI</b><span style="font-size: 12px; color: #5A6478">Knows today's book, guests and invoices</span></div>
+</div>
+<button type="button" aria-label="Close alalAI" style="width: 34px; height: 34px; border-radius: 17px; border: 1px solid #E3E8F0; background: #FFFFFF"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12" style="fill:none;stroke:#0B1220;stroke-width:1.8"><path d="M2 2 L10 10 M10 2 L2 10"></path></svg></button>
+</div>
+<div role="tablist" aria-label="Specialist" style="display: flex; gap: 6px; padding: 12px 22px 0">
+<button type="button" role="tab" aria-selected="true" style="font-family: inherit; font-size: 12px; font-weight: 700; color: #0B1220; background: #EEF2F7; border: none; border-radius: 999px; padding: 6px 12px">Operations</button>
+<button type="button" role="tab" aria-selected="false" style="font-family: inherit; font-size: 12px; font-weight: 600; color: #5A6478; background: transparent; border: none; border-radius: 999px; padding: 6px 12px">Guidance</button>
+<button type="button" role="tab" aria-selected="false" style="font-family: inherit; font-size: 12px; font-weight: 600; color: #5A6478; background: transparent; border: none; border-radius: 999px; padding: 6px 12px">Learning</button>
+</div>
+
+<div style="flex: 1; padding: 16px 22px; display: flex; flex-direction: column; gap: 14px">
+<div style="align-self: flex-end; max-width: 85%; background: #0B1220; color: #FFFFFF; border-radius: 16px 16px 4px 16px; padding: 10px 14px; font-size: 14px">Who's free at 3pm for a 50 min facial?</div>
+<div style="max-width: 92%; background: #F5F8FC; border-radius: 16px 16px 16px 4px; padding: 14px; display: flex; flex-direction: column; gap: 10px; font-size: 14px; line-height: 21px">
+<div><b>Sara and Dana</b> are both free at 15:00.</div>
+<div style="font-size: 13px; color: #5A6478">Sara: Room 3, free until 16:30 · Dana: Room 4, free until 17:00</div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap">
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 700; color: #FFFFFF; background: {{accent}}; border: none; border-radius: 999px; padding: 9px 16px">Book with Sara</button>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #5B21B6; background: #FFFFFF; border: 1px solid #DCCBF8; border-radius: 999px; padding: 9px 16px">Book with Dana</button>
+</div>
+</div>
+<div style="align-self: flex-end; max-width: 85%; background: #0B1220; color: #FFFFFF; border-radius: 16px 16px 4px 16px; padding: 10px 14px; font-size: 14px">Why is Aisha's invoice still open?</div>
+<div style="max-width: 92%; background: #F5F8FC; border-radius: 16px 16px 16px 4px; padding: 14px; display: flex; flex-direction: column; gap: 10px; font-size: 14px; line-height: 21px">
+<div>Her facial with Sara finished at 11:50 but <b>no payment was added</b>. Until it closes, Sara won't be paid for it.</div>
+<a href="#" style="font-size: 13px; font-weight: 700">Open checkout for Aisha R.</a>
+</div>
+</div>
+
+<div style="padding: 0 22px 10px; display: flex; gap: 6px; flex-wrap: wrap">
+<button type="button" style="font-family: inherit; font-size: 12px; font-weight: 600; color: #0B1220; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 999px; padding: 6px 12px">Who hasn't confirmed today?</button>
+<button type="button" style="font-family: inherit; font-size: 12px; font-weight: 600; color: #0B1220; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 999px; padding: 6px 12px">All open invoices</button>
+<button type="button" style="font-family: inherit; font-size: 12px; font-weight: 600; color: #0B1220; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 999px; padding: 6px 12px">Ideas for this guest</button>
+</div>
+<div style="padding: 10px 22px 20px; border-top: 1px solid #EDF1F6">
+<label style="display: flex; align-items: center; gap: 8px; border: 1px solid #E3E8F0; border-radius: 999px; padding: 6px 6px 6px 16px">
+<span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Message alalAI</span>
+<input type="text" placeholder="Ask alalAI in English, Tagalog or Taglish" style="flex: 1; min-width: 0; border: none; outline: none; font-family: inherit; font-size: 14px; color: #0B1220">
+<button type="button" aria-label="Send" style="width: 36px; height: 36px; border-radius: 18px; border: none; background: #0B1220; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" style="fill:none;stroke:#FFFFFF;stroke-width:1.8"><path d="M7 12 V2 M3 6 L7 2 L11 6"></path></svg></button>
+</label>
+</div>
+</aside>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#7C3AED"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#7C3AED' };
+}
+}
+</script>
+</body>
+</html>

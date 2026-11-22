@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>04e · Hold with card</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#5B21B6}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #FFFFFF; font-family: 'Plus Jakarta Sans', sans-serif; color: #0B1220; display: flex; flex-direction: column">
+
+<div style="padding: 16px 20px 0; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<button type="button" aria-label="Back" style="width: 40px; height: 40px; border-radius: 20px; border: 1px solid #E3E8F0; background: #FFFFFF"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" style="fill:none;stroke:#0B1220;stroke-width:2"><path d="M9 2 L4 7 L9 12"></path></svg></button>
+<span style="font-size: 12px; color: #5A6478">Step 4 of 4</span>
+<span style="width: 40px"></span>
+</div>
+<div style="height: 4px; background: #EEF2F7; border-radius: 2px"><div style="width: 100%; height: 4px; background: {{accent}}; border-radius: 2px"></div></div>
+<h1 style="margin: 6px 0 0; font-size: 28px; line-height: 34px; font-weight: 800; letter-spacing: -0.02em">Nothing to pay today</h1>
+<p style="margin: 0; font-size: 14px; line-height: 21px; color: #5A6478">Add a card to hold your booking. You'll pay at the spa after your treatment.</p>
+</div>
+
+<div style="flex: 1; padding: 16px 20px; display: flex; flex-direction: column; gap: 14px">
+<div style="background: #F5F8FC; border-radius: 16px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
+<b style="font-size: 16px">Swedish massage · 50 min</b>
+<span style="font-size: 13px; color: #5A6478">Today, 22 Nov · 15:00 · any therapist</span>
+<span style="font-size: 13px; color: #5A6478">Pay at the spa: <b style="color: #0B1220">AED 249</b> (intro price)</span>
+</div>
+
+<button type="button" style="font-family: inherit; font-size: 15px; font-weight: 700; color: #0B1220; background: #FFFFFF; border: 1px solid #0B1220; border-radius: 999px; padding: 13px">Use Apple Pay or Google Pay</button>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 12px; color: #5A6478"><span style="flex: 1; height: 1px; background: #E3E8F0"></span>or card<span style="flex: 1; height: 1px; background: #E3E8F0"></span></div>
+
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="c-num" style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">CARD NUMBER</label><input id="c-num" type="text" inputmode="numeric" placeholder="1234 1234 1234 1234" style="font-family: inherit; font-size: 16px; color: #0B1220; border: 1px solid #E3E8F0; border-radius: 12px; padding: 13px 14px"></div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px">
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="c-exp" style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">EXPIRY</label><input id="c-exp" type="text" placeholder="MM / YY" style="min-width: 0; font-family: inherit; font-size: 16px; color: #0B1220; border: 1px solid #E3E8F0; border-radius: 12px; padding: 13px 14px"></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="c-cvc" style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">CVC</label><input id="c-cvc" type="text" placeholder="123" style="min-width: 0; font-family: inherit; font-size: 16px; color: #0B1220; border: 1px solid #E3E8F0; border-radius: 12px; padding: 13px 14px"></div>
+</div>
+<div style="font-size: 12px; color: #5A6478">Card fields are hosted by [PAYMENT PROVIDER]. The spa only sees the card brand and last 4 digits.</div>
+
+<div style="border-top: 1px solid #EDF1F6; padding-top: 12px; font-size: 13px; line-height: 19px; color: #2B3445"><b>Free to cancel or move until 13:00 today.</b> After that, or if you can't make it, a 50% fee (AED 124.50) is charged to this card. <a href="#">Policy</a></div>
+</div>
+
+<div style="padding: 14px 20px 22px; border-top: 1px solid #EDF1F6">
+<button type="button" style="width: 100%; font-family: inherit; font-size: 16px; font-weight: 700; color: #FFFFFF; background: {{accent}}; border: none; border-radius: 999px; padding: 16px">Confirm booking</button>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#7C3AED"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#7C3AED' };
+}
+}
+</script>
+</body>
+</html>

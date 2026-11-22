@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>03b · New appointment</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#5B21B6}a:hover{color:#3B0F86}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 900px; box-sizing: border-box; background: #F5F8FC; font-family: 'Plus Jakarta Sans', sans-serif; color: #0B1220; display: flex; flex-direction: column">
+
+<header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 12px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E8F0">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="width: 30px; height: 30px; border-radius: 8px; background: linear-gradient(135deg, #2346E8, #7C2BE0); color: #FFFFFF; font-size: 16px; font-weight: 800; display: flex; align-items: center; justify-content: center">h</div>
+<div style="font-size: 16px; font-weight: 800; letter-spacing: -0.01em">henyoOS</div>
+<div style="width: 1px; height: 22px; background: #E3E8F0"></div>
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" style="fill:none;stroke:#7C3AED;stroke-width:2"><circle cx="8" cy="9" r="4.5"></circle><path d="M8 2 L8 4.5"></path></svg>
+<div style="font-size: 14px; font-weight: 700">Wellness &amp; Spa</div>
+<button type="button" style="font-family: inherit; margin-left: 8px; font-size: 13px; font-weight: 600; color: #0B1220; background: #F5F8FC; border: 1px solid #E3E8F0; border-radius: 999px; padding: 7px 12px">[CENTER NAME] <span style="color: #5A6478; font-weight: 500">· UAE · AED</span></button>
+</div>
+<div style="display: flex; align-items: center; gap: 8px">
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 700; color: #5B21B6; background: #EFE6FB; border: none; border-radius: 999px; padding: 8px 14px">Ask alalAI</button>
+<div style="display: flex; flex-direction: column; font-size: 12px; line-height: 16px; padding-left: 6px"><b>Lina A.</b><span style="color: #5A6478">Front desk · logged in</span></div>
+</div>
+</header>
+
+<div style="flex: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 460px)">
+
+<div aria-hidden="true" style="padding: 22px 28px; display: flex; flex-direction: column; gap: 14px; opacity: 0.45">
+<div style="font-size: 28px; line-height: 34px; font-weight: 800; letter-spacing: -0.02em">Today, 22 Nov</div>
+<div style="flex: 1; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0">
+<div style="padding: 12px; border-right: 1px solid #EDF1F6; display: flex; flex-direction: column; gap: 10px"><b style="font-size: 14px">Layla</b><div style="height: 120px; background: #E1EBFB; border-radius: 10px"></div><div style="height: 120px; background: #FCEFD0; border-radius: 10px"></div><div style="height: 80px; background: #E2F3EA; border-radius: 10px"></div></div>
+<div style="padding: 12px; border-right: 1px solid #EDF1F6; display: flex; flex-direction: column; gap: 10px"><b style="font-size: 14px">Omar</b><div style="height: 80px; background: #E1EBFB; border-radius: 10px; margin-top: 40px"></div><div style="height: 120px; background: #FCEFD0; border-radius: 10px"></div><div style="height: 130px; border: 2px dashed #7C3AED; border-radius: 10px; background: #F7F1FE"></div></div>
+<div style="padding: 12px; display: flex; flex-direction: column; gap: 10px"><b style="font-size: 14px">Sara</b><div style="height: 80px; background: #E1EBFB; border-radius: 10px"></div><div style="height: 80px; background: #FBE2DE; border-radius: 10px"></div></div>
+</div>
+</div>
+
+<aside aria-label="New appointment" style="background: #FFFFFF; border-left: 1px solid #E3E8F0; box-shadow: -12px 0 32px rgba(11, 18, 32, 0.06); display: flex; flex-direction: column">
+<div style="padding: 22px 24px 16px; display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid #EDF1F6">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-size: 12px; color: #5A6478">New appointment</div>
+<h2 style="margin: 0; font-size: 22px; line-height: 28px; font-weight: 800; letter-spacing: -0.02em">Omar · today 14:30</h2>
+</div>
+<button type="button" aria-label="Close" style="width: 34px; height: 34px; border-radius: 17px; border: 1px solid #E3E8F0; background: #FFFFFF"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12" style="fill:none;stroke:#0B1220;stroke-width:1.8"><path d="M2 2 L10 10 M10 2 L2 10"></path></svg></button>
+</div>
+
+<div style="flex: 1; padding: 18px 24px; display: flex; flex-direction: column; gap: 20px">
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="na-guest" style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">GUEST</label>
+<input id="na-guest" type="text" value="050 123 4567" style="font-family: inherit; font-size: 14px; color: #0B1220; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 12px">
+<div style="background: #F5F8FC; border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 3px">
+<div style="display: flex; justify-content: space-between; align-items: center"><b style="font-size: 15px">Maryam Haddad</b><span style="background: #EFE6FB; color: #5B21B6; font-size: 11px; font-weight: 700; border-radius: 999px; padding: 2px 8px">Member</span></div>
+<div style="font-size: 12px; color: #5A6478">12 visits · last 3 Nov · usually sees Layla · Visa •••• 4417 on file</div>
+<div style="font-size: 12px"><a href="#">Not her? New guest</a> · <a href="#">Merge duplicates</a></div>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="na-service" style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">SERVICE</label>
+<div style="display: flex; justify-content: space-between; align-items: center; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 12px">
+<input id="na-service" type="text" value="Hot stone massage · 80 min" style="font-family: inherit; font-size: 14px; font-weight: 600; color: #0B1220; border: none; outline: none; flex: 1; min-width: 0">
+<span style="font-size: 14px; font-weight: 700">AED 420</span>
+</div>
+<div style="font-size: 12px; color: #5A6478">Member price applied automatically · 14:30 – 15:50</div>
+<fieldset style="border: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px">
+<legend style="font-size: 12px; color: #5A6478; padding: 0; margin-bottom: 6px">Add-ons · no extra time</legend>
+<label style="display: flex; justify-content: space-between; align-items: center; font-size: 13px"><span style="display: flex; align-items: center; gap: 8px"><input type="checkbox" checked style="accent-color: #7C3AED; width: 16px; height: 16px">Aromatherapy oil</span><span style="color: #5A6478">+ AED 40</span></label>
+<label style="display: flex; justify-content: space-between; align-items: center; font-size: 13px"><span style="display: flex; align-items: center; gap: 8px"><input type="checkbox" style="accent-color: #7C3AED; width: 16px; height: 16px">Scalp treatment</span><span style="color: #5A6478">+ AED 60</span></label>
+</fieldset>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="na-prov" style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">PROVIDER</label>
+<select id="na-prov" style="font-family: inherit; font-size: 14px; color: #0B1220; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 12px; background: #FFFFFF"><option>Omar</option></select>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="na-room" style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">ROOM</label>
+<select id="na-room" style="font-family: inherit; font-size: 14px; color: #0B1220; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 12px; background: #FFFFFF"><option>Room 2</option></select>
+</div>
+</div>
+<label style="display: flex; align-items: flex-start; gap: 8px; font-size: 13px; margin-top: -8px"><input type="checkbox" style="accent-color: #7C3AED; width: 16px; height: 16px; margin: 1px 0 0"><span>Guest asked for Omar by name<br><span style="font-size: 12px; color: #5A6478">Leave off unless they did. Counts toward his request rate.</span></span></label>
+
+<a href="#" style="font-size: 13px; font-weight: 600">More options: repeat, category, note</a>
+</div>
+
+<div style="padding: 16px 24px 22px; border-top: 1px solid #EDF1F6; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<span style="font-size: 13px; color: #5A6478">Total incl. 5% VAT</span>
+<span style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em">AED 483.00</span>
+</div>
+<button type="button" style="font-family: inherit; font-size: 15px; font-weight: 700; color: #FFFFFF; background: {{accent}}; border: none; border-radius: 999px; padding: 14px 20px">Book appointment</button>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #5B21B6; background: transparent; border: none; padding: 4px">Book and take payment now</button>
+</div>
+</aside>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#7C3AED"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#7C3AED' };
+}
+}
+</script>
+</body>
+</html>

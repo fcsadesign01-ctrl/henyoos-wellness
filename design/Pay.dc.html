@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>03d · Take payment</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#5B21B6}a:hover{color:#3B0F86}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 900px; box-sizing: border-box; background: #F5F8FC; font-family: 'Plus Jakarta Sans', sans-serif; color: #0B1220; display: flex; flex-direction: column">
+
+<header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 12px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E8F0">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="width: 30px; height: 30px; border-radius: 8px; background: linear-gradient(135deg, #2346E8, #7C2BE0); color: #FFFFFF; font-size: 16px; font-weight: 800; display: flex; align-items: center; justify-content: center">h</div>
+<div style="font-size: 16px; font-weight: 800">henyoOS</div>
+<div style="width: 1px; height: 22px; background: #E3E8F0"></div>
+<div style="font-size: 14px; font-weight: 700">Wellness &amp; Spa</div>
+<button type="button" style="font-family: inherit; margin-left: 8px; font-size: 13px; font-weight: 600; color: #0B1220; background: #F5F8FC; border: 1px solid #E3E8F0; border-radius: 999px; padding: 7px 12px">[CENTER NAME] <span style="color: #5A6478; font-weight: 500">· UAE · AED</span></button>
+</div>
+<div style="display: flex; align-items: center; gap: 8px">
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 700; color: #5B21B6; background: #EFE6FB; border: none; border-radius: 999px; padding: 8px 14px">Ask alalAI</button>
+<div style="display: flex; flex-direction: column; font-size: 12px; line-height: 16px; padding-left: 6px"><b>Lina A.</b><span style="color: #5A6478">Front desk · logged in</span></div>
+</div>
+</header>
+<nav aria-label="Modules" style="display: flex; gap: 4px; flex-wrap: wrap; padding: 10px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E8F0; font-size: 13px; font-weight: 600">
+<a href="#" style="color: #0B1220; border-radius: 999px; padding: 7px 14px; text-decoration: none">Book</a>
+<a href="#" style="background: #EFE6FB; color: #5B21B6; border-radius: 999px; padding: 7px 14px; text-decoration: none">Checkout</a>
+<a href="#" style="color: #0B1220; border-radius: 999px; padding: 7px 14px; text-decoration: none">Guests</a>
+<a href="#" style="color: #0B1220; border-radius: 999px; padding: 7px 14px; text-decoration: none">Memberships &amp; Gift cards</a>
+<a href="#" style="color: #0B1220; border-radius: 999px; padding: 7px 14px; text-decoration: none">Messages</a>
+<a href="#" style="color: #5A6478; border-radius: 999px; padding: 7px 14px; text-decoration: none">More</a>
+</nav>
+
+<main style="flex: 1; padding: 24px 28px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 440px); gap: 20px; align-items: start">
+
+<section style="display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-size: 12px; color: #5A6478">Invoice #10482 · open · service date today</div>
+<h1 style="margin: 0; font-size: 28px; line-height: 34px; font-weight: 800; letter-spacing: -0.02em">Maryam Haddad</h1>
+<div style="font-size: 13px; color: #5A6478">Member · Visa •••• 4417 on file · <a href="#">Profile</a></div>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; display: flex; flex-direction: column">
+<div style="display: grid; grid-template-columns: 1fr 140px 110px; gap: 8px; padding: 12px 18px; font-size: 12px; font-weight: 600; color: #5A6478; border-bottom: 1px solid #EDF1F6"><span>Item</span><span>Sale by</span><span style="text-align: right">Amount</span></div>
+<div style="display: grid; grid-template-columns: 1fr 140px 110px; gap: 8px; padding: 14px 18px; font-size: 14px; align-items: center"><span><b>Hot stone massage · 80 min</b><br><span style="font-size: 12px; color: #5A6478">Member price · 14:30 – 15:50</span></span><span>Omar</span><span style="text-align: right">AED 420.00</span></div>
+<div style="display: grid; grid-template-columns: 1fr 140px 110px; gap: 8px; padding: 14px 18px; font-size: 14px; align-items: center; border-top: 1px solid #EDF1F6"><span>Aromatherapy oil <span style="font-size: 12px; color: #5A6478">add-on</span></span><span>Omar</span><span style="text-align: right">AED 40.00</span></div>
+<div style="display: grid; grid-template-columns: 1fr 140px 110px; gap: 8px; padding: 14px 18px; font-size: 14px; align-items: center; border-top: 1px solid #EDF1F6"><span>Hydrating serum 30 ml <span style="font-size: 12px; color: #5A6478">retail</span></span><label style="display: flex"><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Sale by for serum</span><select style="font-family: inherit; font-size: 13px; border: 1px solid #7C3AED; border-radius: 8px; padding: 5px 8px; background: #FFFFFF; color: #0B1220"><option>Omar</option></select></label><span style="text-align: right">AED 0.00 <a href="#" style="font-size: 12px">remove</a></span></div>
+<div style="padding: 12px 18px; display: flex; gap: 8px; flex-wrap: wrap; border-top: 1px solid #EDF1F6; font-size: 13px; font-weight: 600">
+<span style="color: #5A6478; font-weight: 500; padding: 6px 0">Add</span>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #F5F8FC; border: 1px solid #E3E8F0; border-radius: 999px; padding: 6px 12px">Product</button>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #F5F8FC; border: 1px solid #E3E8F0; border-radius: 999px; padding: 6px 12px">Service</button>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #F5F8FC; border: 1px solid #E3E8F0; border-radius: 999px; padding: 6px 12px">Package</button>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #F5F8FC; border: 1px solid #E3E8F0; border-radius: 999px; padding: 6px 12px">Gift card</button>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #F5F8FC; border: 1px solid #E3E8F0; border-radius: 999px; padding: 6px 12px">Apply offer</button>
+</div>
+</div>
+<div style="font-size: 12px; color: #5A6478">The serum was scanned as a tester (AED 0). Pick the retail item to charge it. Every product line needs a Sale by, because that's who earns the commission.</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; max-width: 360px; margin-left: auto; width: 100%">
+<div style="display: flex; justify-content: space-between"><span style="color: #5A6478">Subtotal</span><span>AED 460.00</span></div>
+<div style="display: flex; justify-content: space-between"><span style="color: #5A6478">VAT 5%</span><span>AED 23.00</span></div>
+<div style="display: flex; justify-content: space-between"><span style="color: #5A6478">Tip to Omar (15%)</span><span>AED 69.00</span></div>
+</div>
+</section>
+
+<aside aria-label="Payment" style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="font-size: 13px; color: #5A6478">Amount due</div>
+<div style="font-size: 44px; line-height: 50px; font-weight: 800; letter-spacing: -0.03em">AED 552.00</div>
+<div style="font-size: 12px; color: #5A6478">incl. VAT and AED 69.00 tip</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">TIP FOR OMAR</div>
+<div role="group" aria-label="Tip" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px">
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 0">None</button>
+<button type="button" aria-pressed="true" style="font-family: inherit; font-size: 13px; font-weight: 700; color: #5B21B6; background: #EFE6FB; border: 1px solid #C9AEF5; border-radius: 10px; padding: 10px 0">15%</button>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 0">20%</button>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 0">Custom</button>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">PAY WITH</div>
+<label style="display: flex; align-items: center; justify-content: space-between; border: 2px solid #7C3AED; border-radius: 12px; padding: 12px 14px; font-size: 14px"><span style="display: flex; align-items: center; gap: 10px"><input type="radio" name="tender" checked style="accent-color: #7C3AED; width: 16px; height: 16px"><b>Visa •••• 4417</b></span><span style="font-size: 12px; color: #5A6478">card on file</span></label>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px">
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 0">New card</button>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 0">Cash</button>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 0">Gift card</button>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 0">Points</button>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 0">Package</button>
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 10px; padding: 10px 0">Split</button>
+</div>
+</div>
+
+<button type="button" style="font-family: inherit; font-size: 16px; font-weight: 700; color: #FFFFFF; background: {{accent}}; border: none; border-radius: 999px; padding: 16px 20px">Charge AED 552.00</button>
+<div style="font-size: 12px; color: #5A6478; text-align: center; line-height: 18px">Then close and email the receipt · <a href="#">print instead</a> · <a href="#">no receipt</a><br>The block turns blue when the invoice closes.</div>
+</aside>
+
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#7C3AED"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#7C3AED' };
+}
+}
+</script>
+</body>
+</html>

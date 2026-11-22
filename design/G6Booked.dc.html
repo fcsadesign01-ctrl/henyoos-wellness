@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>04f · Booked</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#5B21B6}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; padding: 20px; background: #FFFFFF; font-family: 'Plus Jakarta Sans', sans-serif; color: #0B1220; display: flex; flex-direction: column; gap: 22px">
+
+<div style="display: flex; align-items: center; gap: 10px">
+<div style="width: 32px; height: 32px; border-radius: 16px; background: {{accent}}; color: #FFFFFF; font-size: 14px; font-weight: 800; display: flex; align-items: center; justify-content: center">S</div>
+<b style="font-size: 14px">[SPA NAME]</b>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px; padding-top: 24px">
+<div style="width: 64px; height: 64px; border-radius: 32px; background: #E2F3EA; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 30 30" style="fill:none;stroke:#1C5B3E;stroke-width:3;stroke-linecap:round;stroke-linejoin:round"><path d="M7 15.5 L13 21.5 L23 9.5"></path></svg></div>
+<h1 style="margin: 0; font-size: 32px; line-height: 38px; font-weight: 800; letter-spacing: -0.02em">You're booked, Priya</h1>
+<p style="margin: 0; font-size: 15px; line-height: 22px; color: #5A6478">See you today at <b style="color: #0B1220">15:00</b>. Please arrive 10 minutes early.</p>
+</div>
+
+<div style="background: #F5F8FC; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+<div style="display: flex; justify-content: space-between"><span style="color: #5A6478">Treatment</span><b>Swedish · 50 min</b></div>
+<div style="display: flex; justify-content: space-between"><span style="color: #5A6478">Therapist</span><b>Ali</b></div>
+<div style="display: flex; justify-content: space-between"><span style="color: #5A6478">When</span><b>Sun 22 Nov, 15:00</b></div>
+<div style="display: flex; justify-content: space-between"><span style="color: #5A6478">Pay at the spa</span><b>AED 249</b></div>
+<div style="display: flex; justify-content: space-between"><span style="color: #5A6478">Where</span><b>[ADDRESS]</b></div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px">
+<button type="button" style="font-family: inherit; font-size: 16px; font-weight: 700; color: #FFFFFF; background: {{accent}}; border: none; border-radius: 999px; padding: 16px">Add to calendar</button>
+<button type="button" style="font-family: inherit; font-size: 15px; font-weight: 600; color: #0B1220; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 999px; padding: 14px">Get directions</button>
+</div>
+
+<div style="font-size: 13px; line-height: 20px; color: #5A6478">We've sent a confirmation by email and will text you at 13:00. Reply C to confirm.<br><a href="#" style="font-weight: 600">Move or cancel</a></div>
+
+<div style="margin-top: auto; text-align: center; font-size: 12px; color: #5A6478">Powered by henyoOS</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#7C3AED"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#7C3AED' };
+}
+}
+</script>
+</body>
+</html>

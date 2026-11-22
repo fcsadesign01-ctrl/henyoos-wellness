@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>04b · Choose service</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#5B21B6}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #FFFFFF; font-family: 'Plus Jakarta Sans', sans-serif; color: #0B1220; display: flex; flex-direction: column">
+
+<div style="padding: 16px 20px 0; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<button type="button" aria-label="Back" style="width: 40px; height: 40px; border-radius: 20px; border: 1px solid #E3E8F0; background: #FFFFFF"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" style="fill:none;stroke:#0B1220;stroke-width:2"><path d="M9 2 L4 7 L9 12"></path></svg></button>
+<span style="font-size: 12px; color: #5A6478">Step 1 of 4</span>
+<span style="width: 40px"></span>
+</div>
+<div style="height: 4px; background: #EEF2F7; border-radius: 2px"><div style="width: 25%; height: 4px; background: {{accent}}; border-radius: 2px"></div></div>
+<h1 style="margin: 6px 0 0; font-size: 28px; line-height: 34px; font-weight: 800; letter-spacing: -0.02em">Massage</h1>
+</div>
+
+<div style="flex: 1; padding: 14px 20px; display: flex; flex-direction: column; gap: 10px">
+<div style="border: 2px solid {{accent}}; border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 2px"><b style="font-size: 17px">Swedish massage</b><span style="font-size: 13px; color: #5A6478">Relaxing, light to medium pressure</span></div>
+<div role="radiogroup" aria-label="Length" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px">
+<label style="display: flex; flex-direction: column; gap: 2px; background: #EFE6FB; border: 1px solid #C9AEF5; border-radius: 12px; padding: 10px 12px; font-size: 12px; color: #3B0F86"><span style="display: flex; align-items: center; gap: 6px"><input type="radio" name="len" checked style="accent-color: #7C3AED; margin: 0"><b style="font-size: 14px">50 min</b></span>AED 299</label>
+<label style="display: flex; flex-direction: column; gap: 2px; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 12px; padding: 10px 12px; font-size: 12px; color: #5A6478"><span style="display: flex; align-items: center; gap: 6px"><input type="radio" name="len" style="accent-color: #7C3AED; margin: 0"><b style="font-size: 14px; color: #0B1220">80 min</b></span>AED 399</label>
+</div>
+<div style="font-size: 12px; color: #5A6478">First visit? It's <b style="color: #0B1220">AED 249</b> for 50 min. We apply it when you add your phone.</div>
+<fieldset style="border: none; margin: 0; padding: 10px 0 0; border-top: 1px solid #EDF1F6; display: flex; flex-direction: column; gap: 8px">
+<legend style="font-size: 12px; color: #5A6478; padding: 0 0 6px">Add-ons · no extra time</legend>
+<label style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; min-height: 32px"><span style="display: flex; align-items: center; gap: 10px"><input type="checkbox" style="accent-color: #7C3AED; width: 18px; height: 18px; margin: 0">Aromatherapy oil</span><span style="color: #5A6478; font-size: 13px">+ AED 40</span></label>
+<label style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; min-height: 32px"><span style="display: flex; align-items: center; gap: 10px"><input type="checkbox" style="accent-color: #7C3AED; width: 18px; height: 18px; margin: 0">Hot towel scalp</span><span style="color: #5A6478; font-size: 13px">+ AED 30</span></label>
+</fieldset>
+</div>
+<button type="button" style="font-family: inherit; text-align: left; display: flex; justify-content: space-between; align-items: center; border: 1px solid #E3E8F0; background: #FFFFFF; border-radius: 18px; padding: 16px; color: #0B1220"><span style="display: flex; flex-direction: column; gap: 2px; font-size: 13px; color: #5A6478"><b style="font-size: 16px; color: #0B1220">Deep tissue</b>Firm pressure · from AED 329</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" style="fill:none;stroke:#8A93A3;stroke-width:2"><path d="M3 5 L7 9 L11 5"></path></svg></button>
+<button type="button" style="font-family: inherit; text-align: left; display: flex; justify-content: space-between; align-items: center; border: 1px solid #E3E8F0; background: #FFFFFF; border-radius: 18px; padding: 16px; color: #0B1220"><span style="display: flex; flex-direction: column; gap: 2px; font-size: 13px; color: #5A6478"><b style="font-size: 16px; color: #0B1220">Hot stone</b>Heated basalt · from AED 379</span><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" style="fill:none;stroke:#8A93A3;stroke-width:2"><path d="M3 5 L7 9 L11 5"></path></svg></button>
+</div>
+
+<div style="padding: 14px 20px 22px; border-top: 1px solid #EDF1F6; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 14px"><span style="color: #5A6478">Swedish · 50 min</span><b>AED 299</b></div>
+<button type="button" style="font-family: inherit; font-size: 16px; font-weight: 700; color: #FFFFFF; background: {{accent}}; border: none; border-radius: 999px; padding: 16px">Continue</button>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#7C3AED"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#7C3AED' };
+}
+}
+</script>
+</body>
+</html>

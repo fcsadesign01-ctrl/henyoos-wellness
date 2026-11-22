@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>03c · Guest profile</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#5B21B6}a:hover{color:#3B0F86}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 900px; box-sizing: border-box; background: #F5F8FC; font-family: 'Plus Jakarta Sans', sans-serif; color: #0B1220; display: flex; flex-direction: column">
+
+<header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 12px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E8F0">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="width: 30px; height: 30px; border-radius: 8px; background: linear-gradient(135deg, #2346E8, #7C2BE0); color: #FFFFFF; font-size: 16px; font-weight: 800; display: flex; align-items: center; justify-content: center">h</div>
+<div style="font-size: 16px; font-weight: 800">henyoOS</div>
+<div style="width: 1px; height: 22px; background: #E3E8F0"></div>
+<div style="font-size: 14px; font-weight: 700">Wellness &amp; Spa</div>
+<button type="button" style="font-family: inherit; margin-left: 8px; font-size: 13px; font-weight: 600; color: #0B1220; background: #F5F8FC; border: 1px solid #E3E8F0; border-radius: 999px; padding: 7px 12px">[CENTER NAME] <span style="color: #5A6478; font-weight: 500">· UAE · AED</span></button>
+</div>
+<div style="display: flex; align-items: center; gap: 8px">
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 700; color: #5B21B6; background: #EFE6FB; border: none; border-radius: 999px; padding: 8px 14px">Ask alalAI</button>
+<div style="display: flex; flex-direction: column; font-size: 12px; line-height: 16px; padding-left: 6px"><b>Lina A.</b><span style="color: #5A6478">Front desk · logged in</span></div>
+</div>
+</header>
+<nav aria-label="Modules" style="display: flex; gap: 4px; flex-wrap: wrap; padding: 10px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E8F0; font-size: 13px; font-weight: 600">
+<a href="#" style="color: #0B1220; border-radius: 999px; padding: 7px 14px; text-decoration: none">Book</a>
+<a href="#" style="color: #0B1220; border-radius: 999px; padding: 7px 14px; text-decoration: none">Checkout</a>
+<a href="#" style="background: #EFE6FB; color: #5B21B6; border-radius: 999px; padding: 7px 14px; text-decoration: none">Guests</a>
+<a href="#" style="color: #0B1220; border-radius: 999px; padding: 7px 14px; text-decoration: none">Memberships &amp; Gift cards</a>
+<a href="#" style="color: #0B1220; border-radius: 999px; padding: 7px 14px; text-decoration: none">Messages</a>
+<a href="#" style="color: #5A6478; border-radius: 999px; padding: 7px 14px; text-decoration: none">More</a>
+</nav>
+
+<main style="flex: 1; padding: 24px 28px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap">
+<div style="display: flex; align-items: center; gap: 16px">
+<div style="width: 64px; height: 64px; border-radius: 32px; background: #EFE6FB; color: #5B21B6; font-size: 22px; font-weight: 800; display: flex; align-items: center; justify-content: center">MH</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: center; gap: 10px"><h1 style="margin: 0; font-size: 30px; line-height: 36px; font-weight: 800; letter-spacing: -0.02em">Maryam Haddad</h1><span style="background: #EFE6FB; color: #5B21B6; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 3px 10px">Member</span></div>
+<div style="font-size: 13px; color: #5A6478">050 123 4567 · maryam.h@[EMAIL] · Female · Referred by Instagram</div>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 10px">
+<button type="button" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #0B1220; background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 999px; padding: 11px 16px">I want to…</button>
+<button type="button" style="font-family: inherit; font-size: 14px; font-weight: 700; color: #FFFFFF; background: {{accent}}; border: none; border-radius: 999px; padding: 12px 22px">Book appointment</button>
+</div>
+</div>
+
+<div style="display: flex; gap: 28px; flex-wrap: wrap; font-size: 13px; color: #5A6478">
+<span><b style="font-size: 18px; color: #0B1220">12</b> visits</span>
+<span><b style="font-size: 18px; color: #0B1220">3 Nov</b> last visit</span>
+<span><b style="font-size: 18px; color: #0B1220">AED 6,240</b> lifetime</span>
+<span><b style="font-size: 18px; color: #0B1220">1,240</b> points</span>
+<span><b style="font-size: 18px; color: #0B1220">Layla</b> usual provider</span>
+</div>
+
+<div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 340px); gap: 20px; flex: 1">
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; display: flex; flex-direction: column">
+<div role="tablist" aria-label="Guest history" style="display: flex; gap: 4px; padding: 10px 14px; border-bottom: 1px solid #EDF1F6; flex-wrap: wrap; font-size: 13px; font-weight: 600">
+<button type="button" role="tab" aria-selected="true" style="font-family: inherit; font-size: 13px; font-weight: 700; color: #0B1220; background: #EEF2F7; border: none; border-radius: 999px; padding: 7px 12px">Appointments</button>
+<button type="button" role="tab" aria-selected="false" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #5A6478; background: transparent; border: none; border-radius: 999px; padding: 7px 12px">Products</button>
+<button type="button" role="tab" aria-selected="false" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #5A6478; background: transparent; border: none; border-radius: 999px; padding: 7px 12px">Membership</button>
+<button type="button" role="tab" aria-selected="false" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #5A6478; background: transparent; border: none; border-radius: 999px; padding: 7px 12px">Packages</button>
+<button type="button" role="tab" aria-selected="false" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #5A6478; background: transparent; border: none; border-radius: 999px; padding: 7px 12px">Gift cards</button>
+<button type="button" role="tab" aria-selected="false" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #5A6478; background: transparent; border: none; border-radius: 999px; padding: 7px 12px">Points</button>
+<button type="button" role="tab" aria-selected="false" style="font-family: inherit; font-size: 13px; font-weight: 600; color: #5A6478; background: transparent; border: none; border-radius: 999px; padding: 7px 12px">Messages</button>
+</div>
+<table style="width: 100%; border-collapse: collapse; font-size: 13px">
+<thead><tr style="text-align: left; color: #5A6478; font-size: 12px"><th style="padding: 12px 18px; font-weight: 600">Date</th><th style="padding: 12px 8px; font-weight: 600">Service</th><th style="padding: 12px 8px; font-weight: 600">Provider</th><th style="padding: 12px 8px; font-weight: 600">Status</th><th style="padding: 12px 18px; font-weight: 600; text-align: right">Amount</th></tr></thead>
+<tbody>
+<tr style="border-top: 1px solid #EDF1F6"><td style="padding: 14px 18px"><b>Today 14:30</b></td><td style="padding: 14px 8px">Hot stone 80 min <span style="color: #5A6478">+ aromatherapy</span></td><td style="padding: 14px 8px">Omar</td><td style="padding: 14px 8px"><span style="background: #E2F3EA; color: #154530; border-radius: 999px; padding: 3px 10px; font-size: 12px; font-weight: 600">Confirmed</span></td><td style="padding: 14px 18px; text-align: right">AED 483.00</td></tr>
+<tr style="border-top: 1px solid #EDF1F6"><td style="padding: 14px 18px">3 Nov</td><td style="padding: 14px 8px">Swedish 50 min</td><td style="padding: 14px 8px">Layla</td><td style="padding: 14px 8px"><span style="background: #E1EBFB; color: #17345E; border-radius: 999px; padding: 3px 10px; font-size: 12px; font-weight: 600">Closed</span></td><td style="padding: 14px 18px; text-align: right"><a href="#">#10391</a> · AED 0.00 <span style="color: #5A6478">(membership)</span></td></tr>
+<tr style="border-top: 1px solid #EDF1F6"><td style="padding: 14px 18px">12 Oct</td><td style="padding: 14px 8px">Classic facial 50 min</td><td style="padding: 14px 8px">Sara</td><td style="padding: 14px 8px"><span style="background: #E1EBFB; color: #17345E; border-radius: 999px; padding: 3px 10px; font-size: 12px; font-weight: 600">Closed</span></td><td style="padding: 14px 18px; text-align: right"><a href="#">#10120</a> · AED 367.50</td></tr>
+<tr style="border-top: 1px solid #EDF1F6"><td style="padding: 14px 18px">28 Sep</td><td style="padding: 14px 8px">Swedish 50 min</td><td style="padding: 14px 8px">Layla</td><td style="padding: 14px 8px"><span style="background: #FBE2DE; color: #6E1F15; border-radius: 999px; padding: 3px 10px; font-size: 12px; font-weight: 600">Late cancel</span></td><td style="padding: 14px 18px; text-align: right"><a href="#">#09988</a> · AED 149.50 fee</td></tr>
+</tbody>
+</table>
+<div style="padding: 12px 18px; font-size: 12px; color: #5A6478">Showing 4 of 13 · <a href="#">Show all</a></div>
+</div>
+
+<aside style="display: flex; flex-direction: column; gap: 12px">
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; padding: 16px 18px; display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">MEMBERSHIP</div>
+<b style="font-size: 16px">Monthly Glow · AED 299 / month</b>
+<div style="font-size: 12px; color: #5A6478">Member since Jun · next draft 3 Dec · Visa •••• 4417</div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; padding: 16px 18px; display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">CARDS ON FILE</div>
+<div style="font-size: 14px"><b>Visa •••• 4417</b> <span style="color: #5A6478; font-size: 12px">exp 08/28 · membership card</span></div>
+<a href="#" style="font-size: 12px; font-weight: 600">Add a card</a>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; padding: 16px 18px; display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">BALANCES</div>
+<div style="font-size: 13px; line-height: 22px">Gift card <b>AED 250.00</b><br>Packages <span style="color: #5A6478">none active</span></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E3E8F0; border-radius: 16px; padding: 16px 18px; display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 12px; font-weight: 700; color: #5A6478; letter-spacing: 0.04em">NOTES &amp; CONSENT</div>
+<div style="font-size: 13px; line-height: 20px">Prefers medium pressure, no nut oils.<br><span style="color: #5A6478; font-size: 12px">SMS: opted in · Email: valid</span></div>
+</div>
+</aside>
+</div>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#7C3AED"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#7C3AED' };
+}
+}
+</script>
+</body>
+</html>
